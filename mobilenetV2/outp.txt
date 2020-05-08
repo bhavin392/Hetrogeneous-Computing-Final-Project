@@ -1,0 +1,182 @@
+Pointwise 0:
+
+Input: 20x20x4 Filter: 1x1x24 Output: 20x20x24
+
+   ========= Performance Analysis =============
+   Setup Time:                      0.000473733seconds
+   Simulation Time:                 37.8509seconds
+   System Clock:                    0.1GHz
+   Transistor Latency:              10ns
+   Runtime:                         27426 cycles
+   Runtime:                         274.26 us
+   Stalls:                          22459 cycles
+   Executed Nodes:                  4966 cycles
+
+   ========= Stalled Cycle Breakdown ==========
+       Load Only:                   22333 cycles
+       Store Only:                  126 cycles
+       Compute Only:                0 cycles
+       Compute & Store:             0 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              0 cycles
+       Load & Compute & Store:      0 cycles
+   ========= Execution Cycle Breakdown ========
+       Load Only:                   4 cycles
+       Store Only:                  1 cycles
+       Compute Only:                2481 cycles
+       Compute & Store:             3 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              2477 cycles
+       Load & Compute & Store:      0 cycles
+
+Input: 30x30x4 Filter: 1x1x24 Output: 30x30x24
+
+   ========= Performance Analysis =============
+   Setup Time:                      0.000476179seconds
+   Simulation Time:                 108.583seconds
+   System Clock:                    0.1GHz
+   Transistor Latency:              10ns
+   Runtime:                         57885 cycles
+   Runtime:                         578.85 us
+   Stalls:                          47380 cycles
+   Executed Nodes:                  10504 cycles
+
+   ========= Stalled Cycle Breakdown ==========
+       Load Only:                   47254 cycles
+       Store Only:                  126 cycles
+       Compute Only:                0 cycles
+       Compute & Store:             0 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              0 cycles
+       Load & Compute & Store:      0 cycles
+   ========= Execution Cycle Breakdown ========
+       Load Only:                   4 cycles
+       Store Only:                  1 cycles
+       Compute Only:                5250 cycles
+       Compute & Store:             3 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              5246 cycles
+       Load & Compute & Store:      0 cycles
+
+Depthwise:
+
+Input: 20X20X24 Filter:3x3 Output: 20x20x24 Stride: 1
+
+   ========= Performance Analysis =============
+   Setup Time:                      0.00050124seconds
+   Simulation Time:                 172.518seconds
+   System Clock:                    0.1GHz
+   Transistor Latency:              10ns
+   Runtime:                         136029 cycles
+   Runtime:                         1360.29 us
+   Stalls:                          111316 cycles
+   Executed Nodes:                  24712 cycles
+
+   ========= Stalled Cycle Breakdown ==========
+       Load Only:                   111190 cycles
+       Store Only:                  126 cycles
+       Compute Only:                0 cycles
+       Compute & Store:             0 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              0 cycles
+       Load & Compute & Store:      0 cycles
+   ========= Execution Cycle Breakdown ========
+       Load Only:                   4 cycles
+       Store Only:                  1 cycles
+       Compute Only:                12354 cycles
+       Compute & Store:             3 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              12350 cycles
+       Load & Compute & Store:      0 cycles
+
+Input: 20x20x24 Filter:3x3 Output: 10x10x24 Stride:2
+
+   ========= Performance Analysis =============
+   Setup Time:                      0.000504283seconds
+   Simulation Time:                 51.0592seconds
+   System Clock:                    0.1GHz
+   Transistor Latency:              10ns
+   Runtime:                         102864 cycles
+   Runtime:                         1028.64 us
+   Stalls:                          84181 cycles
+   Executed Nodes:                  18682 cycles
+
+   ========= Stalled Cycle Breakdown ==========
+       Load Only:                   84055 cycles
+       Store Only:                  126 cycles
+       Compute Only:                0 cycles
+       Compute & Store:             0 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              0 cycles
+       Load & Compute & Store:      0 cycles
+   ========= Execution Cycle Breakdown ========
+       Load Only:                   4 cycles
+       Store Only:                  1 cycles
+       Compute Only:                9339 cycles
+       Compute & Store:             3 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              9335 cycles
+       Load & Compute & Store:      0 cycles
+
+Pointwise 1:
+
+Input: 20x20x24 Filter: 1x1x6 Output: 20x20x6
+
+   ========= Performance Analysis =============
+   Setup Time:                      0.000474909seconds
+   Simulation Time:                 120.34seconds
+   System Clock:                    0.1GHz
+   Transistor Latency:              10ns
+   Runtime:                         91952 cycles
+   Runtime:                         919.52 us
+   Stalls:                          75253 cycles
+   Executed Nodes:                  16698 cycles
+
+   ========= Stalled Cycle Breakdown ==========
+       Load Only:                   75127 cycles
+       Store Only:                  126 cycles
+       Compute Only:                0 cycles
+       Compute & Store:             0 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              0 cycles
+       Load & Compute & Store:      0 cycles
+   ========= Execution Cycle Breakdown ========
+       Load Only:                   4 cycles
+       Store Only:                  1 cycles
+       Compute Only:                8347 cycles
+       Compute & Store:             3 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              8343 cycles
+       Load & Compute & Store:      0 cycles
+
+Input: 10x10x24 Filter: 1x1x6 Output: 10x10x6
+
+   ========= Performance Analysis =============
+   Setup Time:                      0.000498036seconds
+   Simulation Time:                 11.421seconds
+   System Clock:                    0.1GHz
+   Transistor Latency:              10ns
+   Runtime:                         25050 cycles
+   Runtime:                         250.5 us
+   Stalls:                          20515 cycles
+   Executed Nodes:                  4534 cycles
+
+   ========= Stalled Cycle Breakdown ==========
+       Load Only:                   20389 cycles
+       Store Only:                  126 cycles
+       Compute Only:                0 cycles
+       Compute & Store:             0 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              0 cycles
+       Load & Compute & Store:      0 cycles
+   ========= Execution Cycle Breakdown ========
+       Load Only:                   4 cycles
+       Store Only:                  1 cycles
+       Compute Only:                2265 cycles
+       Compute & Store:             3 cycles
+       Load & Store:                0 cycles
+       Load & Compute:              2261 cycles
+       Load & Compute & Store:      0 cycles
+
+
+
